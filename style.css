@@ -1,0 +1,182 @@
+*{
+    font-size: 20px;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: FDD2BF;
+    display: flex; 
+    align-items: center;
+    overflow: auto;
+    justify-content: space-between;
+    margin-right: 0;
+    overflow: hidden;
+    
+}
+.title p{
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 1rem;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.781);  
+    padding: 2rem; 
+    font-weight: 500;
+}
+.buttons{
+    display: flex;
+    justify-content: right;
+   margin-right: 0;
+} 
+
+.buttons a:hover{
+    font-weight: bold;
+    background-color:white;
+    color: tomato;
+    border-bottom: 2px solid red
+}
+.name p{
+    font-size:30px;
+    font-weight: bold;
+}
+.intro{
+    background-image:url("images/bg2.jpg");     
+    color: black;                      
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.introbox{
+    padding: 2%;
+    text-align: center;
+    width:30%;
+    height: 40%;
+    margin:2%;
+    border-radius: 1.25rem;
+    
+}
+.titles{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    text-decoration:underline;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.education{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    flex-wrap:wrap;
+    padding-bottom: 6rem;
+    
+}
+.college{
+    text-align: center;
+    border: 2px;
+    line-height: 2rem;
+}
+.college img{
+    height: 49%;
+}
+.school{
+    line-height: 2rem;
+    text-align: center;
+}
+.college,.school{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #E1E8EB;
+    padding: 1.3rem;
+    
+}
+.school:hover, .college:hover{
+ 
+        box-shadow: 0 0.8rem 0.7rem rgba(0,0,0,0.3);
+}
+.skills{
+    display: flex;
+    padding-top: 2.5rem;
+    justify-content: space-around;
+    margin-bottom: 0;
+    height: 60vh;
+    flex:1;
+}
+.languages, .webd, .cp{
+    text-align: center;
+    
+}
+.skillimg{
+    height: 30%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-content: center;
+    height: 5rem;
+    padding: 2rem;
+    background-color: #E1E8EB;
+}
+footer h1,footer p,footer .contact{
+    text-align: center;
+}
+footer i{
+     font-size: 2rem;
+     padding: 1rem;
+     padding-bottom: 0;
+     padding-top: 1rem;
+}
+footer h1{
+    font-size: 1.5rem;
+}
+
+@media(max-width:768px){
+    .buttons{
+        display: none;
+    }
+    .navbar{
+        text-align: center;
+        justify-content: center;
+        height: 50px;
+    }
+    .college{
+        margin-bottom: 10px;
+    }
+    .skillimg{
+    height: 60px;
+    }
+    .skills{
+      display: block;
+    }
+    .languages, .webd, .cp{
+        padding: 1rem;
+    }
+}
+@media(max-width:428px){
+    .skills{
+        height: 70vh;
+    }
+
+}
